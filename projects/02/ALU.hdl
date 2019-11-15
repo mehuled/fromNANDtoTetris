@@ -42,5 +42,7 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-   // Put you code here:
+    Not (in[0..15]=zx,out[0..15]=x[0..15]);
+    
+
 }
