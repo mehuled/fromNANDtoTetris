@@ -42,7 +42,22 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-    Not (in[0..15]=zx,out[0..15]=x[0..15]);
-    
+    Mux16 (a[0..15]=x,b[0..15]=false,sel=zx,out[0..15]=xa);
+    Not16 (in[0..15]=xa,out[0..15]=notxa);
+    Mux16 (a[0..15]=xa,b[0..15]=notxa,sel=nx,out[0..15]=xb);
+    Mux16 (a[0..15]=y,b[0..15]=false,sel=zy,out[0..15]=ya);
+    Not16 (in[0..15]=ya,out[0..15]=notya);
+    Mux16 (a[0..15]=ya,b[0..15]=notya,sel=ny,out[0..15]=yb);
+    Add16 (a[0..15]=xb,b[0..15]=yb,out[0..15]=sumxyb);
+    And16 (a[0..15]=xb,b[0..15]=yb,out[0..15]=andxyb);
+    Mux16 (a[0..15]=andxyb,b[0..15]=sumxyb,sel=f,out[0..15]=outa);
+    Not16 (in[0..15]=outa,out[0..15]=notouta);
+    Mux16 (a[0..15]=outa,b[0..15]=notouta,sel=no,out[0..15]=outb);
+    Mux16 (a[0..15]=outa,b[0..15]=notouta,sel=no,out[0..15]=out);
+    LessThanZero (in=outb,out=ng) ;
+    Or16Way (in[0..15]=outb,out=notzr) ;
+    Not (in=notzr,out=zr) ; 
+
+
 
 }
