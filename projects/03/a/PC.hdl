@@ -16,5 +16,14 @@ CHIP PC {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Or(a=reset,b=load,out=o1) ;
+    Or(a=o1,b=inc,out=orofthree) ;
+    Register(in=outputmux,load=orofthree,out=partialoutput) ;
+    Inc16(in=partialoutput,out=increment) ;
+    Mux8Way16(a=false,b=in,c=increment,d=in,e=false,f=false,g=false,h=false,sel[0]=load,sel[1]=inc,sel[2]=reset,out=outputmux) ;
+    And16(a=partialoutput,b=partialoutput,out=out) ;
+
+
+
+
 }
