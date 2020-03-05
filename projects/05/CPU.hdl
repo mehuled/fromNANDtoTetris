@@ -39,16 +39,48 @@ CHIP CPU {
         pc[15];          // address of next instruction
 
     PARTS:
-    Mux16(a=outM,b=instruction,sel=instruction[15],out=inToARegister);
-    Register(in=inToARegister,load=??,out=outOfARegister);
-    Register(in=inToARegister,load=??,out=addressM);
-    Mux16(a=outOfARegister,b=inM,sel=??,out=inToALUA);
-    Register(in=outM,load=??,out=inToALUB);
-    ALU(x=inToALUA,y=inToALUB,zx=??,nx=??,zy=??,ny=??,f=??,no=??,out=outM,zr=??,ng=??);
-    PC(in=outOfARegister,load=??,inc=??,reset=reset,out=pc);
 
+    Not(in=instruction[15],out=NotInstruction15);
+    Mux16(a=ALUOutput,b=instruction,sel=NotInstruction15,out=ARegisterInput);
 
+    And(a=instruction[15],b=instruction[0],out=control0);
+    And(a=instruction[15],b=instruction[1],out=control1);
+    And(a=instruction[15],b=instruction[2],out=control2);
+    And(a=instruction[15],b=instruction[3],out=control3);
+    And(a=instruction[15],b=instruction[4],out=control4);
+    And(a=instruction[15],b=instruction[5],out=control5);
+    And(a=instruction[15],b=instruction[6],out=control6);
+    And(a=instruction[15],b=instruction[7],out=control7);
+    And(a=instruction[15],b=instruction[8],out=control8);
+    And(a=instruction[15],b=instruction[9],out=control9);
+    And(a=true,b=instruction[10],out=control10);
+    And(a=true,b=instruction[11],out=control11);
+    And(a=instruction[15],b=instruction[12],out=control12);
+    And(a=instruction[15],b=instruction[13],out=control13);
+    And(a=instruction[15],b=instruction[14],out=control14);
 
+    And(a=control3,b=control3,out=writeM);
+    
+    Or(a=control5,b=NotInstruction15,out=loadARegister);
+    ARegister(in=ARegisterInput,load=loadARegister,out[0..14]=addressM,out=ARegisterOutput);
+
+    Mux16(a=ARegisterOutput,b=inM,sel=control12,out=inToALUB);
+    
+    DRegister(in=ALUOutput,load=control4,out=inToALUA);
+    
+    ALU(x=inToALUA,y=inToALUB,zx=control11,nx=control10,zy=control9,ny=control8,f=control7,no=control6,out=ALUOutput,out=outM,zr=zr,ng=ng);
+    
+    
+    PC(in=ARegisterOutput,load=loadbitpc,inc=incbitpc,reset=reset,out[0..14]=pc);
+    And(a=control1,b=zr,out=loadterm1);
+    And(a=ng,b=control2,out=loadterm2);
+    Not(in=zr,out=notzr);
+    Not(in=ng,out=notng);
+    And(a=control0,b=notzr,out=loadterm3temp);
+    And(a=loadterm3temp,b=notng,out=loadterm3);
+    Or(a=loadterm1,b=loadterm2,out=loadtermtemp);
+    Or(a=loadtermtemp,b=loadterm3,out=loadbitpc);
+    Not(in=loadbitpc,out=incbitpc);
 
 
 }
