@@ -43,19 +43,48 @@ public class VMParser {
         }
         else if(!currentCommandString.contains(" "))
         {
+            if(currentCommandString.equals("return"))
+            {
+              currentCommand = new C_RETURN() ;
+            }
+            else
             currentCommand = new C_ARITHMETIC(currentCommandString) ;
         }
         else {
             String[] commandElements = currentCommandString.split(" ") ;
-            String memorySegment =commandElements[1] ;
-            if(commandElements[0].equals("push"))
-            currentCommand = new C_PUSH(memorySegment,Integer.parseInt(commandElements[2])) ;
-            else if(commandElements[0].equals("pop"))
+
+            if(commandElements[0].equals("label"))
             {
-                if (memorySegment.equals("constant"))
-                    throw new InvalidOperationException("Pop operations cannot be performed on Constant Memory Segment");
-                currentCommand = new C_POP(memorySegment,Integer.parseInt(commandElements[2])) ;
+                currentCommand = new C_LABEL(commandElements[1]) ;
             }
+            else if(commandElements[0].equals("goto"))
+            {
+                currentCommand = new C_GOTO(commandElements[1]) ;
+            }
+            else if(commandElements[0].equals("if-goto"))
+            {
+                currentCommand = new C_IF(commandElements[1]) ;
+            }
+            else if(commandElements[0].equals("call"))
+            {
+                currentCommand = new C_CALL(commandElements[1],commandElements[2]) ;
+            }
+            else if(commandElements[0].equals("function"))
+            {
+                currentCommand = new C_FUNCTION(commandElements[1],commandElements[2]) ;
+            }
+            else if (commandElements[0].equals("push"))
+                    currentCommand = new C_PUSH(commandElements[1], Integer.parseInt(commandElements[2]));
+
+            else if (commandElements[0].equals("pop")) {
+                    if (commandElements[1].equals("constant"))
+                        throw new InvalidOperationException("Pop operations cannot be performed on Constant Memory Segment");
+                    currentCommand = new C_POP(commandElements[1], Integer.parseInt(commandElements[2]));
+                }
+            else {
+                throw new InvalidOperationException("Unable to parse command : " + currentCommandString) ;
+            }
+
         }
         return currentCommand ;
     }
