@@ -1,0 +1,217 @@
+<class>
+<keyword> class </keyword>
+<identifier> <meta >Main </meta> </identifier>
+<symbol> { </symbol>
+<classVarDec>
+<keyword> static </keyword>
+<keyword> boolean </keyword>
+<IdentifierDefinition> 
+<identifier> <meta type="boolean", kind="STATIC", index="0">test </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</classVarDec> 
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> <meta >main </meta> </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList> 
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<varDec>
+<keyword> var </keyword>
+<identifier> <meta >SquareGame </meta> </identifier>
+<IdentifierDefinition> 
+<identifier> <meta type="SquareGame", kind="VAR", index="0">game </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="SquareGame", kind="VAR", index="0">game </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> game </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<doStatement>
+<keyword> do </keyword>
+<identifier> <meta type="SquareGame", kind="VAR", index="0">game </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >run </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList> 
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement> 
+<doStatement>
+<keyword> do </keyword>
+<identifier> <meta type="SquareGame", kind="VAR", index="0">game </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >dispose </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList> 
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement> 
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement> 
+</statements> 
+<symbol> } </symbol>
+</subroutineBody> 
+</subroutineDec> 
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> <meta type="boolean", kind="STATIC", index="0">test </meta> </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList> 
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<IdentifierDefinition> 
+<identifier> <meta type="int", kind="VAR", index="0">i </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> , </symbol>
+<IdentifierDefinition> 
+<identifier> <meta type="int", kind="VAR", index="1">j </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<varDec>
+<keyword> var </keyword>
+<identifier> <meta >String </meta> </identifier>
+<IdentifierDefinition> 
+<identifier> <meta type="String", kind="VAR", index="2">s </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<varDec>
+<keyword> var </keyword>
+<identifier> <meta >Array </meta> </identifier>
+<IdentifierDefinition> 
+<identifier> <meta type="Array", kind="VAR", index="3">a </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+</expression> 
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="String", kind="VAR", index="2">s </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="String", kind="VAR", index="2">s </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> j </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="Array", kind="VAR", index="3">a </meta> </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+</expression> 
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> j </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+</statements> 
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="0">i </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="1">j </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> j </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="0">i </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+<symbol> | </symbol>
+<term>
+<identifier> j </identifier>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+</statements> 
+<symbol> } </symbol>
+</ifStatement> 
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement> 
+</statements> 
+<symbol> } </symbol>
+</subroutineBody> 
+</subroutineDec> 
+<symbol> } </symbol>
+</class> 

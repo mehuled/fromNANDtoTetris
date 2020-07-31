@@ -1,0 +1,294 @@
+<class>
+<keyword> class </keyword>
+<identifier> <meta >Main </meta> </identifier>
+<symbol> { </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> <meta >main </meta> </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList> 
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<varDec>
+<keyword> var </keyword>
+<identifier> <meta >Array </meta> </identifier>
+<IdentifierDefinition> 
+<identifier> <meta type="Array", kind="VAR", index="0">a </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<IdentifierDefinition> 
+<identifier> <meta type="int", kind="VAR", index="1">length </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<varDec>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<IdentifierDefinition> 
+<identifier> <meta type="int", kind="VAR", index="2">i </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> , </symbol>
+<IdentifierDefinition> 
+<identifier> <meta type="int", kind="VAR", index="3">sum </meta> </identifier>
+</IdentifierDefinition> 
+<symbol> ; </symbol>
+</varDec> 
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="1">length </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> <meta >Keyboard </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >readInt </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<stringConstant> HOW MANY NUMBERS?  </stringConstant>
+</term> 
+</expression> 
+</expressionList> 
+<symbol> ) </symbol>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="Array", kind="VAR", index="0">a </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> <meta >Array </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >new </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> length </identifier>
+</term> 
+</expression> 
+</expressionList> 
+<symbol> ) </symbol>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="2">i </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+<symbol> &lt; </symbol>
+<term>
+<identifier> length </identifier>
+</term> 
+</expression> 
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="Array", kind="VAR", index="0">a </meta> </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+</expression> 
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> <meta >Keyboard </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >readInt </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<stringConstant> ENTER THE NEXT NUMBER:  </stringConstant>
+</term> 
+</expression> 
+</expressionList> 
+<symbol> ) </symbol>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="2">i </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+</statements> 
+<symbol> } </symbol>
+</whileStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="2">i </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="3">sum </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+<symbol> &lt; </symbol>
+<term>
+<identifier> length </identifier>
+</term> 
+</expression> 
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="3">sum </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> sum </identifier>
+</term> 
+<symbol> + </symbol>
+<term>
+<identifier> <meta type="Array", kind="VAR", index="0">a </meta> </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+</expression> 
+<symbol> ] </symbol>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+<letStatement>
+<keyword> let </keyword>
+<identifier> <meta type="int", kind="VAR", index="2">i </meta> </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term> 
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term> 
+</expression> 
+<symbol> ; </symbol>
+</letStatement> 
+</statements> 
+<symbol> } </symbol>
+</whileStatement> 
+<doStatement>
+<keyword> do </keyword>
+<identifier> <meta >Output </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >printString </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<stringConstant> THE AVERAGE IS:  </stringConstant>
+</term> 
+</expression> 
+</expressionList> 
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement> 
+<doStatement>
+<keyword> do </keyword>
+<identifier> <meta >Output </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >printInt </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+<expression>
+<term>
+<identifier> sum </identifier>
+</term> 
+<symbol> / </symbol>
+<term>
+<identifier> length </identifier>
+</term> 
+</expression> 
+</expressionList> 
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement> 
+<doStatement>
+<keyword> do </keyword>
+<identifier> <meta >Output </meta> </identifier>
+<symbol> . </symbol>
+<identifier> <meta >println </meta> </identifier>
+<symbol> ( </symbol>
+<expressionList>
+</expressionList> 
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement> 
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement> 
+</statements> 
+<symbol> } </symbol>
+</subroutineBody> 
+</subroutineDec> 
+<symbol> } </symbol>
+</class> 

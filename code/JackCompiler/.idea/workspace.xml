@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b844881-d7d4-4489-a3d5-212daffde3b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/IdentifierMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/Operand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/SymbolTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/Term.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/VMWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JackAnalyzer/com/dflipflop/fromnandtotetris/CompilationEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JackAnalyzer/com/dflipflop/fromnandtotetris/CompilationEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JackAnalyzer/com/dflipflop/fromnandtotetris/IDENTIFIER.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JackAnalyzer/com/dflipflop/fromnandtotetris/IDENTIFIER.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JackAnalyzer/com/dflipflop/fromnandtotetris/JackAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/CompilationEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/CompilationEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/IDENTIFIER.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/IDENTIFIER.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/JackAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/JackCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tools/bin/Virtual Machine Emulator.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../../tools/bin/Virtual Machine Emulator.dat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1eXTozeJjPqtXQYbHShdwnqteIn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dflipflop.fromnandtotetris" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JackCompiler">
+    <configuration name="JackAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dflipflop.fromnandtotetris.JackAnalyzer" />
+      <module name="JackAnalyzer" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../../projects/10/Square" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dflipflop.fromnandtotetris.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JackCompiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dflipflop.fromnandtotetris.JackCompiler" />
+      <module name="JackAnalyzer" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../../projects/11/Seven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dflipflop.fromnandtotetris.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.dflipflop.fromnandtotetris.Main" />
+      <module name="JackAnalyzer" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JackAnalyzer" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.JackCompiler" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JackCompiler" />
+        <item itemvalue="Application.JackAnalyzer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b844881-d7d4-4489-a3d5-212daffde3b7" name="Default Changelist" comment="" />
+      <created>1594467116500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594467116500</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596229720781">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1596229720781" />
+    <state x="479" y="158" key="#com.intellij.ide.util.MemberChooser" timestamp="1594563063401">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="479" y="158" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1594563063401" />
+    <state x="648" y="321" key="#xdebugger.evaluate" timestamp="1595020421850">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="648" y="321" key="#xdebugger.evaluate/0.0.1440.900@0.0.1440.900" timestamp="1595020421850" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1596229733986">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.834@0.0.1440.834" timestamp="1596142585211" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596229733986" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1596229733984">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.834@0.0.1440.834" timestamp="1596142585208" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596229733984" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1596229733982">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.834@0.0.1440.834" timestamp="1596142585207" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596229733982" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1596229733985">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.834@0.0.1440.834" timestamp="1596142585209" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596229733985" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1596145650049">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.834@0.0.1440.834" timestamp="1595082057846" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596145650049" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1596145650048">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.834@0.0.1440.834" timestamp="1595082057845" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596145650048" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1596145650047">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.834@0.0.1440.834" timestamp="1595082057845" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596145650047" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1596145650048">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.834@0.0.1440.834" timestamp="1595082057846" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596145650048" />
+    <state x="229" y="96" key="SettingsEditor" timestamp="1595165386272">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.834@0.0.1440.834" timestamp="1595165276546" />
+    <state x="229" y="96" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1595165386272" />
+    <state x="488" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1594561037851">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="488" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1440.900@0.0.1440.900" timestamp="1594561037851" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1596056538824">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1596056538824" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/JackTokenizer.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/JackTokenizer.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/CompilationEngine.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/dflipflop/fromnandtotetris/CompilationEngine.java</url>
+          <line>172</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
